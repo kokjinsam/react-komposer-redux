@@ -2,6 +2,14 @@
 
 > For more information on React Komposer, see [here](https://github.com/kadirahq/react-komposer).
 
+### Installation
+
+```
+npm install --save react-komposer-redux mantra-core
+```
+
+> mantra-core is peerDependency of react-komposer-redux
+
 ### Usage
 
 Here's an example of a Mantra container:
