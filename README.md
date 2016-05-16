@@ -12,6 +12,29 @@ npm install --save react-komposer-redux mantra-core
 
 ### Usage
 
+In `configs/context.js`:
+
+```
+import * as Collections from '../../lib/collections';
+import { Meteor } from 'meteor/meteor';
+import { FlowRouter } from 'meteor/kadira:flow-router-ssr';
+import { Tracker } from 'meteor/tracker';
+import { createStore } from 'redux';
+
+export default function ({ reducer }) {
+  const Store = createStore(reducer);
+
+  return {
+    Meteor,
+    FlowRouter,
+    Collections,
+    Tracker,
+    Store, // make sure to supply this
+    dispatch: Store.dispatch,
+  };
+}
+```
+
 Here's an example of a Mantra container:
 
 ```
