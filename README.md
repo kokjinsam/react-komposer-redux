@@ -1,4 +1,4 @@
-## Redux for React Komposer
+## Redux for React Komposer [DEPRECATED, USE [`react-komposer-plus`](https://github.com/sammkj/react-komposer-plus)]
 
 > For more information on React Komposer, see [here](https://github.com/kadirahq/react-komposer).
 
